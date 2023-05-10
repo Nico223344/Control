@@ -62,7 +62,7 @@
     function searchCharacters(query) {
       characterList.innerHTML = 'Cargando...';
 
-      fetch(`https://harry-potter-api.onrender.com/personajes/?name=${query}`)
+      fetch(`https://www.potterapi.com/v1/characters?key=$YOUR_API_KEY&name=${query}`)
         .then((response) => response.json())
         .then((data) => {
           characterList.innerHTML = '';
